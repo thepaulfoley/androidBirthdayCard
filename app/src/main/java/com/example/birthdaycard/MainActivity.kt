@@ -35,15 +35,16 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MyMain(name: String, modifier: Modifier = Modifier, from: String="Somebody special" ) {
     Text(
-        text = "Happy Birthday, $name!",
+        text = "Happy Birthday, $name!\n From $from",
         modifier = modifier.padding(24.dp),
-        fontSize = 84.sp,
-        lineHeight = 120.sp
+        fontSize = 24.sp,
+        lineHeight = 48.sp
     )
     Text(
-        text = from,
-        fontSize = 64.sp,
-        lineHeight = 96.sp
+        text = "Other text element.",
+        fontSize = 24.sp,
+        lineHeight = 48.sp,
+
     )
 }
 
